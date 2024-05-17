@@ -1,0 +1,526 @@
+#euro2024 {
+    background: linear-gradient(0deg, #143cdb 96.42%, #0d1e62 100.88%);
+    .top-header__euro2024 {
+        background: transparent;
+        box-shadow: unset;
+        z-index: 1001;
+        .navWrapp__euro2024 {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            .leftNav__euro2024 {
+                & > a {
+                    img {
+                        margin-top: 0;
+                    }
+                }
+            }
+            .centerNav__euro2024 {
+                form {
+                    margin-top: 0;
+                }
+            }
+            .rightNav__euro2024 {
+                margin-top: 0;
+                .btnNetwork__euro2024 {
+                    background-color: #de2027;
+                    .btnNetworkimg__euro2024 {
+                        background-color: #e33b41;
+                    }
+                }
+            }
+        }
+    }
+    .revamp-navbar-menu-sso {
+        .menu-sso {
+            .menu-sso-login {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .top-wrapper__euro2024 {
+        background-color: transparent;
+        margin-top: 20px;
+        // float: unset;
+        .topmenu {
+            .topmenu__euro2024 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo__euro2024 {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    .mainMenu__euro2024 {
+        background-color: transparent;
+        box-shadow: unset;
+        border-bottom: unset;
+        .nav__euro2024 {
+            background: #0d1e62;
+            border-bottom: 1px solid #faaa50;
+            .navbar__euro2024 {
+                display: flex;
+                gap: 32px;
+
+                li {
+                    a {
+                        padding: 16px 4px;
+                        color: #fff;
+                        font-family: Inter-Regular, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        &:hover {
+                            color: #faaa50;
+                            border-bottom: 2px solid #faaa50;
+                            background-color: transparent;
+                        }
+                    }
+                    &:nth-child(2) {
+                        a {
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+                .active {
+                    a {
+                        color: #faaa50;
+                        border-bottom: 2px solid #faaa50;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    #content {
+        position: relative;
+        .elementWrapper__euro2024 {
+            position: absolute;
+            top: -10vh;
+            width: 100%;
+            height: 420px;
+            z-index: -1;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media screen and (max-width: 1024px) {
+                top: 0vh;
+            }
+        }
+
+        .elementWrapperSticky__euro2024 {
+            position: absolute;
+            top: 170vh;
+            width: 100%;
+            height: 347px;
+            z-index: -1;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &.sticky {
+                position: sticky;
+                top: 43vh;
+            }
+
+            @media screen and (max-width: 1024px) {
+                top: 110vh;
+                &.sticky {
+                    position: sticky;
+                    top: 75vh;
+                }
+            }
+        }
+    }
+    .content__euro2024 {
+        position: relative;
+        z-index: 1000;
+        background-color: #f2f3f4;
+        margin-top: 24px;
+        padding: 12px 12.5px;
+        border-radius: 4px;
+        overflow-x: hidden;
+        .row__euro2024 {
+            @media screen and (max-width: 1024px) {
+                margin-left: 0;
+            }
+        }
+        .elmenetBanner__euro2024 {
+            position: absolute;
+            top: 18px;
+            z-index: -1;
+        }
+        .headline__euro2024 {
+            border-bottom: unset;
+            .box {
+                background: #0d1e62;
+                padding: 20px;
+                .title-box {
+                    background-color: #1f2369;
+                    padding: 12px;
+                    a {
+                        .title-slider {
+                            color: #fff;
+                            font-family: Inter-Regular, sans-serif;
+                            font-size: 26px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 42px; /* 161.538% */
+                        }
+                        .date {
+                            color: #fff;
+                            font-family: Inter-Regular, sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+            .slick-dots {
+                li {
+                    button {
+                        &:before {
+                            content: "";
+                            border-radius: 50%;
+                            background-color: #faaa50;
+                            color: #faaa50;
+                            opacity: 0.2;
+                        }
+                        &:hover {
+                            &:before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &.slick-active {
+                        button {
+                            &:before {
+                                color: #faaa50;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width: 1024px) {
+                    top: 486px;
+                }
+            }
+        }
+        .editorChoice__euro2024 {
+            background: #0d1e62;
+            .editorChoiceTitle__euro2024 {
+                color: #faaa50;
+                font-family: Inter-Bold, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .editorImgText__euro2024 {
+                .editorVideoRow__euro2024 {
+                    color: #fff;
+                    font-family: Inter-Regular, sans-serif;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .editorIndikator__euro2024[type="radio"] {
+                margin-right: 3px;
+                &::after {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 15px;
+                    top: -2px;
+                    left: -1px;
+                    position: relative;
+                    background-color: #fff;
+                    content: "";
+                    display: inline-block;
+                    visibility: visible;
+                    border: unset;
+                }
+                &:checked::after {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 15px;
+                    top: -2px;
+                    left: -1px;
+                    position: relative;
+                    background-color: #faaa50;
+                    content: "";
+                    display: inline-block;
+                    visibility: visible;
+                    border: unset;
+                }
+            }
+            .lineWidget__euro2024 {
+                .lineOne {
+                    display: block;
+                    width: 100%;
+                    height: 6px;
+                    background: #029f4c;
+                }
+                .lineTwo {
+                    display: flex;
+                    width: 100%;
+                    height: 8px;
+                    span {
+                        height: 8px;
+                        &:nth-child(1) {
+                            width: 70%;
+                            background: #ffcc00;
+                        }
+                        &:nth-child(2) {
+                            width: 15%;
+                            background: #ff0100;
+                        }
+                        &:nth-child(3) {
+                            width: 15%;
+                            background: #1e1f28;
+                        }
+                    }
+                }
+            }
+        }
+        .newsPopular__euro2024 {
+            & > .listPopular__euro2024:last-of-type {
+                border-bottom: none;
+            }
+            .popular__euro2024 {
+                background-color: #0d1e62;
+                border-bottom: 1px solid #faaa50;
+                .popularTitle__euro2024 {
+                    a {
+                        color: #faaa50;
+                        font-family: Inter-Bold, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+            .listPopular__euro2024 {
+                background-color: #0d1e62;
+                border-bottom: 1px dashed #9c9c9c;
+                float: unset;
+                .popularNumber__euro2024 {
+                    color: #faaa50;
+                    font-family: Inter-Bold, sans-serif;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .popularText__euro2024 {
+                    color: #fff;
+                    font-family: Inter-Regular, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 22.4px */
+                }
+            }
+            .lineWidget__euro2024 {
+                display: block;
+                .lineOne {
+                    display: block;
+                    width: 100%;
+                    height: 6px;
+                    background: #029f4c;
+                }
+                .lineTwo {
+                    display: flex;
+                    width: 100%;
+                    height: 8px;
+                    span {
+                        height: 8px;
+                        &:nth-child(1) {
+                            width: 70%;
+                            background: #ffcc00;
+                        }
+                        &:nth-child(2) {
+                            width: 15%;
+                            background: #ff0100;
+                        }
+                        &:nth-child(3) {
+                            width: 15%;
+                            background: #1e1f28;
+                        }
+                    }
+                }
+            }
+        }
+        .newsFeed__euro2024 {
+            .title__euro2024 {
+                background-color: #0d1e62;
+                border-right: unset;
+
+                color: #faaa50;
+                font-family: Inter-Regular, sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .newsUpdate__euro2024 {
+                .listNews__euro2024 {
+                    .titleNewsUpdate__euro2024 {
+                        color: #0c0b0b;
+                        font-family: Inter-Bold, sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 160%; /* 25.6px */
+                    }
+                    .date {
+                        color: #de2027;
+                        font-family: Inter-Regular, sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    .desk__euro2024 {
+                        color: #0c0b0b;
+                        font-family: Inter-Regular, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%; /* 22.4px */
+                    }
+                }
+            }
+            .btn__euro2024 {
+                border-radius: 3px;
+                background: #faaa50;
+
+                color: #fff;
+                font-family: Inter-Bold, sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding: 12px 16px;
+            }
+        }
+        .photoWidget__euro2024 {
+            margin-right: 0;
+            .photoWrapper__euro2024 {
+                padding: unset;
+                background-color: #0d1e62;
+                float: unset;
+                .photoHeader__euro2024 {
+                    color: #faaa50;
+                    font-family: Inter-Bold, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
+                    margin-top: unset;
+                    padding: 12px 20px;
+                    border-bottom: 1px solid #faaa50;
+                }
+                .bodyPhoto__euro2024 {
+                    padding: 0 16px;
+                    margin-top: 12px;
+                    .photoTitle__euro2024 {
+                        color: #fff;
+                        font-family: Inter-Bold, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 160%; /* 25.6px */
+                    }
+                }
+            }
+            .lineWidget__euro2024 {
+                display: block;
+                .lineOne {
+                    display: block;
+                    width: 100%;
+                    height: 6px;
+                    background: #029f4c;
+                }
+                .lineTwo {
+                    display: flex;
+                    width: 100%;
+                    height: 8px;
+                    span {
+                        height: 8px;
+                        &:nth-child(1) {
+                            width: 70%;
+                            background: #ffcc00;
+                        }
+                        &:nth-child(2) {
+                            width: 15%;
+                            background: #ff0100;
+                        }
+                        &:nth-child(3) {
+                            width: 15%;
+                            background: #1e1f28;
+                        }
+                    }
+                }
+            }
+        }
+        .btn_euro2024 {
+            cursor: pointer;
+            border-radius: 3px;
+            background: #faaa50;
+            color: #fff;
+            font-family: Inter-Bold, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 12px 16px;
+        }
+        .inewsSponsor__euro2024 {
+            margin-left: -15px;
+            margin-right: 0;
+            margin-bottom: 20px;
+            figcaption {
+                padding: 4px 0;
+                color: #a9a9a9;
+                text-align: center;
+                font-family: Inter-Regular, sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                border-radius: 8px;
+                background: #f4f4f4;
+            }
+            .sponsor__euro2024 {
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+                border-radius: var(--Radius-None, 0px) var(--Radius-None, 0px) 8px 8px;
+                background: var(--Grey3, #d8d8d8);
+            }
+        }
+    }
+}
