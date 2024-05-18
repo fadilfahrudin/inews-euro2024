@@ -171,6 +171,18 @@
             &.sticky {
                 position: sticky;
                 top: 43vh;
+                @media screen and (min-height: 600px) {
+                    top: 55vh;
+                }
+                @media screen and (min-height: 800px) {
+                    top: 60vh;
+                }
+                @media screen and (min-height: 900px) {
+                    top: 65vh;
+                }
+                @media screen and (min-height: 1080px) {
+                    top: 70vh;
+                }
             }
 
             @media screen and (max-width: 1024px) {
@@ -185,29 +197,16 @@
     .content__euro2024 {
         position: relative;
         z-index: 1000;
-        // width: 84%;
+        width: 90%;
         background-color: #f2f3f4;
         margin: auto;
         margin-top: 24px;
-        padding: 12px 12.5px;
+        padding: 12px 0;
         border-radius: 4px;
         overflow-x: hidden;
-        // @media screen and (min-width: 1800px) {
-        //     width: 90vw;
-        // }
-        // .container__euro2024 {
-        //     padding-left: 0;
-        //     padding-right: 0;
-        //     @media screen and (min-width: 1200px) {
-        //         width: 1110px;
-        //     }
-        //     .sideRight__euro2024 {
-        //         padding-right: 0;
-        //         @media screen and (min-width: 1200px) {
-        //             width: 23.5%;
-        //         }
-        //     }
-        // }
+        @media screen and (max-width: 1366px) {
+            width: max-content;
+        }
         .row__euro2024 {
             @media screen and (max-width: 1200px) {
                 margin-left: 0;

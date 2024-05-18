@@ -148,6 +148,26 @@
   position: sticky;
   top: 43vh;
 }
+@media screen and (min-height: 600px) {
+  #euro2024 #content .elementWrapperSticky__euro2024.sticky {
+    top: 55vh;
+  }
+}
+@media screen and (min-height: 800px) {
+  #euro2024 #content .elementWrapperSticky__euro2024.sticky {
+    top: 60vh;
+  }
+}
+@media screen and (min-height: 900px) {
+  #euro2024 #content .elementWrapperSticky__euro2024.sticky {
+    top: 65vh;
+  }
+}
+@media screen and (min-height: 1080px) {
+  #euro2024 #content .elementWrapperSticky__euro2024.sticky {
+    top: 70vh;
+  }
+}
 @media screen and (max-width: 1024px) {
   #euro2024 #content .elementWrapperSticky__euro2024 {
     top: 110vh;
@@ -160,12 +180,18 @@
 #euro2024 .content__euro2024 {
   position: relative;
   z-index: 1000;
+  width: 90%;
   background-color: #f2f3f4;
   margin: auto;
   margin-top: 24px;
-  padding: 12px 12.5px;
+  padding: 12px 0;
   border-radius: 4px;
   overflow-x: hidden;
+}
+@media screen and (max-width: 1366px) {
+  #euro2024 .content__euro2024 {
+    width: max-content;
+  }
 }
 @media screen and (max-width: 1200px) {
   #euro2024 .content__euro2024 .row__euro2024 {

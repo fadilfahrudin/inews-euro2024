@@ -46,7 +46,8 @@ $("#btn-search-sticky ul").hide();
 $(window).scroll(function () {
     var scrollY = $(this).scrollTop();
     var nav = $('.main-menu').height() + $('.top-header').height();
-    let window = $(this).width();
+    let windowWidth = $(this).width();
+    let windowHeight = $(this).height();
     if (scrollY >= nav) {
         $(".top-wrapper").addClass("hidden");
         $(".top-header").addClass("sticky");
@@ -64,19 +65,20 @@ $(window).scroll(function () {
     }
 
     // euro element
-    if (window <= 1024) {
+    if (windowWidth <= 1024) {
         if (scrollY >= 450) {
             $('.elementWrapperSticky__euro2024').addClass('sticky');
         } else {
             $('.elementWrapperSticky__euro2024').removeClass('sticky');
         }
-    } else if (window >= 1024) {
+    } else if (windowWidth >= 1024) {
         if (scrollY >= 730) {
             $('.elementWrapperSticky__euro2024').addClass('sticky');
         } else {
             $('.elementWrapperSticky__euro2024').removeClass('sticky');
         }
     }
+
 
 });
 
