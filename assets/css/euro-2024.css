@@ -102,8 +102,8 @@
 }
 #euro2024 .mainMenu__euro2024 .nav__euro2024 .navbar__euro2024 li a:hover {
   color: #faaa50;
-  border-bottom: 2px solid #faaa50;
   background-color: transparent;
+  border-bottom: 2px solid #faaa50;
 }
 #euro2024 .mainMenu__euro2024 .nav__euro2024 .navbar__euro2024 li:nth-child(2) a {
   text-transform: uppercase;
@@ -260,6 +260,9 @@
   font-weight: 700;
   line-height: normal;
 }
+#euro2024 .content__euro2024 .editorChoice__euro2024 .editorImgText__euro2024:hover .editorVideoRow__euro2024 {
+  opacity: 0.8;
+}
 #euro2024 .content__euro2024 .editorChoice__euro2024 .editorImgText__euro2024 .editorVideoRow__euro2024 {
   color: #fff;
   font-family: Inter-Regular, sans-serif;
@@ -343,6 +346,9 @@
   border-bottom: 1px dashed #9c9c9c;
   float: unset;
 }
+#euro2024 .content__euro2024 .newsPopular__euro2024 .listPopular__euro2024:hover .popularText__euro2024 {
+  opacity: 0.8;
+}
 #euro2024 .content__euro2024 .newsPopular__euro2024 .listPopular__euro2024 .popularNumber__euro2024 {
   color: #faaa50;
   font-family: Inter-Bold, sans-serif;
@@ -398,6 +404,11 @@
   font-weight: 700;
   line-height: normal;
 }
+#euro2024 .content__euro2024 .newsFeed__euro2024 .newsUpdate__euro2024 .listNews__euro2024:hover .titleNewsUpdate__euro2024 {
+  opacity: 0.8;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+}
 #euro2024 .content__euro2024 .newsFeed__euro2024 .newsUpdate__euro2024 .listNews__euro2024 .titleNewsUpdate__euro2024 {
   color: #0c0b0b;
   font-family: Inter-Bold, sans-serif;
@@ -405,6 +416,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 25.6px */
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
 }
 #euro2024 .content__euro2024 .newsFeed__euro2024 .newsUpdate__euro2024 .listNews__euro2024 .date {
   color: #de2027;
@@ -455,6 +468,9 @@
 #euro2024 .content__euro2024 .photoWidget__euro2024 .photoWrapper__euro2024 .bodyPhoto__euro2024 {
   padding: 0 16px;
   margin-top: 12px;
+}
+#euro2024 .content__euro2024 .photoWidget__euro2024 .photoWrapper__euro2024 .bodyPhoto__euro2024:hover .photoTitle__euro2024 p {
+  opacity: 0.8;
 }
 #euro2024 .content__euro2024 .photoWidget__euro2024 .photoWrapper__euro2024 .bodyPhoto__euro2024 .photoTitle__euro2024 {
   color: #fff;

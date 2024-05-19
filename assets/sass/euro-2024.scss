@@ -114,8 +114,8 @@
                         text-transform: capitalize;
                         &:hover {
                             color: #faaa50;
-                            border-bottom: 2px solid #faaa50;
                             background-color: transparent;
+                            border-bottom: 2px solid #faaa50;
                         }
                     }
                     &:nth-child(2) {
@@ -286,6 +286,11 @@
                 line-height: normal;
             }
             .editorImgText__euro2024 {
+                &:hover {
+                    .editorVideoRow__euro2024 {
+                        opacity: 0.8;
+                    }
+                }
                 .editorVideoRow__euro2024 {
                     color: #fff;
                     font-family: Inter-Regular, sans-serif;
@@ -375,6 +380,11 @@
                 background-color: #0d1e62;
                 border-bottom: 1px dashed #9c9c9c;
                 float: unset;
+                &:hover {
+                    .popularText__euro2024 {
+                        opacity: 0.8;
+                    }
+                }
                 .popularNumber__euro2024 {
                     color: #faaa50;
                     font-family: Inter-Bold, sans-serif;
@@ -436,6 +446,13 @@
             }
             .newsUpdate__euro2024 {
                 .listNews__euro2024 {
+                    &:hover {
+                        .titleNewsUpdate__euro2024 {
+                            opacity: 0.8;
+                            transition: color 0.3s ease-in-out;
+                            -webkit-transition: color 0.3s ease-in-out;
+                        }
+                    }
                     .titleNewsUpdate__euro2024 {
                         color: #0c0b0b;
                         font-family: Inter-Bold, sans-serif;
@@ -443,6 +460,8 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: 160%; /* 25.6px */
+                        transition: color 0.3s ease-in-out;
+                        -webkit-transition: color 0.3s ease-in-out;
                     }
                     .date {
                         color: #de2027;
@@ -496,6 +515,13 @@
                 .bodyPhoto__euro2024 {
                     padding: 0 16px;
                     margin-top: 12px;
+                    &:hover {
+                        .photoTitle__euro2024 {
+                            p {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
                     .photoTitle__euro2024 {
                         color: #fff;
                         font-family: Inter-Bold, sans-serif;
