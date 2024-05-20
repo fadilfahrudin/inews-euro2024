@@ -42,7 +42,7 @@ ul {
     overflow-x: hidden;
     height: auto;
     background-color: #fff;
-    header {
+    .header__widget {
         position: relative;
         z-index: -2;
         display: flex;
@@ -71,7 +71,7 @@ ul {
             width: auto;
         }
     }
-    main {
+    .body__widget {
         padding: 16px 14px;
         ul {
             display: flex;
@@ -130,7 +130,7 @@ ul {
             }
         }
     }
-    footer {
+    .footer__widget {
         padding: 8px 12px;
         display: flex;
         align-items: center;

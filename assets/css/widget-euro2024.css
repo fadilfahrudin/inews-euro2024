@@ -35,7 +35,7 @@ ul {
   height: auto;
   background-color: #fff;
 }
-#WidgetEuro2024 header {
+#WidgetEuro2024 .header__widget {
   position: relative;
   z-index: -2;
   display: flex;
@@ -47,7 +47,7 @@ ul {
   background: linear-gradient(70deg, rgba(13, 30, 98, 0) 54.22%, #0d1e62 95.15%);
   background-color: #143cdb;
 }
-#WidgetEuro2024 header .bgHeader__euro2024 {
+#WidgetEuro2024 .header__widget .bgHeader__euro2024 {
   position: absolute;
   z-index: -1;
   left: 0;
@@ -56,40 +56,40 @@ ul {
   width: auto;
   height: 124px;
 }
-#WidgetEuro2024 header .officialPartner__img {
+#WidgetEuro2024 .header__widget .officialPartner__img {
   height: 45px;
   width: auto;
 }
-#WidgetEuro2024 header .logoEuro2024__img {
+#WidgetEuro2024 .header__widget .logoEuro2024__img {
   height: 36px;
   width: auto;
 }
-#WidgetEuro2024 main {
+#WidgetEuro2024 .body__widget {
   padding: 16px 14px;
 }
-#WidgetEuro2024 main ul {
+#WidgetEuro2024 .body__widget ul {
   display: flex;
   flex-direction: column;
   gap: 16px 0;
 }
-#WidgetEuro2024 main ul li {
+#WidgetEuro2024 .body__widget ul li {
   border-bottom: dashed 1px #9c9c9c;
   padding-bottom: 16px;
 }
-#WidgetEuro2024 main ul li:last-child {
+#WidgetEuro2024 .body__widget ul li:last-child {
   border-bottom: none;
 }
-#WidgetEuro2024 main ul li .cardWidget__euro2024 {
+#WidgetEuro2024 .body__widget ul li .cardWidget__euro2024 {
   display: flex;
   align-items: start;
   gap: 0 12px;
 }
-#WidgetEuro2024 main ul li .cardWidget__euro2024 img {
+#WidgetEuro2024 .body__widget ul li .cardWidget__euro2024 img {
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: top center;
 }
-#WidgetEuro2024 main ul li .cardWidget__euro2024 .titleCard__euro2024 {
+#WidgetEuro2024 .body__widget ul li .cardWidget__euro2024 .titleCard__euro2024 {
   color: #000;
   font-family: Inter-Bold, sans-serif;
   font-size: 14px;
@@ -101,7 +101,7 @@ ul {
   display: -webkit-box;
   overflow: hidden;
 }
-#WidgetEuro2024 main .btnSeeAll__euro2024 {
+#WidgetEuro2024 .body__widget .btnSeeAll__euro2024 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,12 +115,12 @@ ul {
   font-style: normal;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-#WidgetEuro2024 main .btnSeeAll__euro2024:hover {
+#WidgetEuro2024 .body__widget .btnSeeAll__euro2024:hover {
   color: #faaa50;
   background-color: #fff;
   border: 1px solid #faaa50;
 }
-#WidgetEuro2024 footer {
+#WidgetEuro2024 .footer__widget {
   padding: 8px 12px;
   display: flex;
   align-items: center;
@@ -128,7 +128,7 @@ ul {
   gap: 0 10px;
   background-color: #143cdb;
 }
-#WidgetEuro2024 footer .textFooter__euro2024 {
+#WidgetEuro2024 .footer__widget .textFooter__euro2024 {
   color: #fff;
   font-family: Inter-Regular, sans-serif;
   font-size: 12px;
@@ -136,17 +136,17 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-#WidgetEuro2024 footer .sponsorWrapp__euro2024 {
+#WidgetEuro2024 .footer__widget .sponsorWrapp__euro2024 {
   display: flex;
   align-items: center;
   gap: 0 8px;
 }
-#WidgetEuro2024 footer .sponsorWrapp__euro2024 .placement {
+#WidgetEuro2024 .footer__widget .sponsorWrapp__euro2024 .placement {
   width: 40px;
   height: 40px;
   background-color: #fff;
 }
-#WidgetEuro2024 footer .sponsorWrapp__euro2024 .placement img {
+#WidgetEuro2024 .footer__widget .sponsorWrapp__euro2024 .placement img {
   aspect-ratio: 1/1;
   object-fit: contain;
   object-position: center;
