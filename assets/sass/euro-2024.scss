@@ -23,6 +23,13 @@
                         margin-right: 0 !important;
                     }
                 }
+                & > div {
+                    img {
+                        margin-top: 0 !important;
+                        margin-left: 0 !important;
+                        margin-right: 0 !important;
+                    }
+                }
             }
             .centerNav__euro2024 {
                 width: max-content;
@@ -529,6 +536,10 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: 160%; /* 25.6px */
+                        img {
+                            object-fit: cover;
+                            object-position: top;
+                        }
                     }
                 }
             }

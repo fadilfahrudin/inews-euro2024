@@ -25,6 +25,11 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+#euro2024 .top-header__euro2024 .navWrapp__euro2024 .leftNav__euro2024 > div img {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 #euro2024 .top-header__euro2024 .navWrapp__euro2024 .centerNav__euro2024 {
   width: max-content;
   float: none;
@@ -479,6 +484,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 25.6px */
+}
+#euro2024 .content__euro2024 .photoWidget__euro2024 .photoWrapper__euro2024 .bodyPhoto__euro2024 .photoTitle__euro2024 img {
+  object-fit: cover;
+  object-position: top;
 }
 #euro2024 .content__euro2024 .photoWidget__euro2024 .lineWidget__euro2024 {
   display: block;
