@@ -150,7 +150,7 @@
         position: relative;
         .elementWrapper__euro2024 {
             position: absolute;
-            top: -10vh;
+            top: 14vh;
             width: 100%;
             height: 420px;
             z-index: -1;
@@ -158,10 +158,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            @media screen and (max-width: 1024px) {
-                top: 0vh;
-            }
         }
 
         .elementWrapperSticky__euro2024 {
@@ -200,6 +196,10 @@
                 }
             }
         }
+
+        .iframeJadwal__euro2024 {
+            margin: 20px 0;
+        }
     }
     .content__euro2024 {
         position: relative;
@@ -207,7 +207,6 @@
         width: 90%;
         background-color: #f2f3f4;
         margin: auto;
-        margin-top: 24px;
         padding: 12px 0;
         border-radius: 4px;
         overflow-x: hidden;

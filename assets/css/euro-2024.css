@@ -126,18 +126,13 @@
 }
 #euro2024 #content .elementWrapper__euro2024 {
   position: absolute;
-  top: -10vh;
+  top: 14vh;
   width: 100%;
   height: 420px;
   z-index: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (max-width: 1024px) {
-  #euro2024 #content .elementWrapper__euro2024 {
-    top: 0vh;
-  }
 }
 #euro2024 #content .elementWrapperSticky__euro2024 {
   position: absolute;
@@ -182,13 +177,15 @@
     top: 75vh;
   }
 }
+#euro2024 #content .iframeJadwal__euro2024 {
+  margin: 20px 0;
+}
 #euro2024 .content__euro2024 {
   position: relative;
   z-index: 1000;
   width: 90%;
   background-color: #f2f3f4;
   margin: auto;
-  margin-top: 24px;
   padding: 12px 0;
   border-radius: 4px;
   overflow-x: hidden;
