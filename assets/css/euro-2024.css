@@ -86,6 +86,7 @@
   background-color: transparent;
   box-shadow: unset;
   border-bottom: unset;
+  z-index: 1001;
 }
 #euro2024 .mainMenu__euro2024 .nav__euro2024 {
   background: #0d1e62;
