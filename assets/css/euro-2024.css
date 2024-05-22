@@ -487,6 +487,11 @@
   object-fit: cover;
   object-position: top;
 }
+@media screen and (max-width: 1200px) {
+  #euro2024 .content__euro2024 .photoWidget__euro2024 .photoWrapper__euro2024 .bodyPhoto__euro2024 .photoTitle__euro2024 img {
+    width: 100%;
+  }
+}
 #euro2024 .content__euro2024 .photoWidget__euro2024 .lineWidget__euro2024 {
   display: block;
 }

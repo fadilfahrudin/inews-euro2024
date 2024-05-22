@@ -539,6 +539,10 @@
                         img {
                             object-fit: cover;
                             object-position: top;
+
+                            @media screen and (max-width: 1200px) {
+                                width: 100%;
+                            }
                         }
                     }
                 }
