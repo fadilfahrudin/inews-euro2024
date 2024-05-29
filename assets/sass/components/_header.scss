@@ -1,0 +1,230 @@
+header {
+    position: sticky;
+    // top: -1px;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    .topBar {
+        position: sticky;
+        top: -1px;
+        z-index: 999;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        .container {
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & > div {
+                display: flex;
+                align-items: center;
+
+                &:first-child {
+                    gap: 0 16px;
+                    a {
+                        .ic-inews-tv {
+                            width: 32.382px;
+                            height: 28.279px;
+                            animation: tvAnimate 2.5s linear infinite;
+                        }
+                        @keyframes tvAnimate {
+                            0% {
+                                content: url("../img/ic-inews-tv.png");
+                            }
+                            100% {
+                                content: url("../img/ic-inews-tv-active.png");
+                            }
+                        }
+                    }
+
+                    .app-gateway {
+                        position: relative;
+                        width: auto;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 112px;
+                            height: auto;
+                        }
+                        .modal-app-gateway {
+                            display: none;
+                            position: absolute;
+                            z-index: 999;
+                            top: 43px;
+                            left: -88px;
+                            width: 370px;
+                            height: 182px;
+                            background-image: url("../img/pattren-bg.png");
+                            background-size: 106%;
+                            background-position: center center;
+                            transform: translateY(0);
+                            opacity: 0;
+
+                            border-radius: 0px 0px 10px 10px;
+                            box-shadow: 0px 1px 4px 0px rgba(143, 143, 143, 0.25);
+                            align-items: center;
+                            gap: 32px;
+                            padding: 24px;
+                            overflow: hidden;
+
+                            // @include media.ipad {
+                            //     left: -122px;
+                            // }
+
+                            &.modal-app-gateway-open {
+                                display: flex;
+                                animation: open 0.5s linear forwards;
+
+                                @keyframes open {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(0);
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        transform: translateY(10px);
+                                    }
+                                }
+                            }
+                            &.modal-app-gateway-close {
+                                display: flex;
+                                animation: close 0.3s linear reverse forwards;
+
+                                @keyframes close {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(0);
+                                        display: none;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        transform: translateY(10px);
+                                    }
+                                }
+                            }
+                            .qrcode-app {
+                                img {
+                                    width: 120px;
+                                    height: 120px;
+                                    aspect-ratio: 1/1;
+                                }
+                            }
+                            .get-app-wrappp {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+                                align-items: center;
+                                p {
+                                    cursor: default;
+                                    text-align: center;
+                                    color: #000;
+
+                                    font-family: "Century Gothic", sans-serif;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    margin-bottom: 0;
+                                }
+                                .app-available {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 12px;
+                                    img {
+                                        width: 105px;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    .searchForm {
+                        position: relative;
+                        width: clamp(150px, 23vw, 310px);
+                        height: 32px;
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            // border: 1px solid $color-gray-75;
+                            border-radius: 16px;
+                            padding: 4px 16px;
+
+                            &:focus {
+                                // outline: 1px solid $color-dark-100;
+                            }
+                        }
+                        .btnSearch {
+                            position: absolute;
+                            right: 16px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+                &:last-child {
+                    gap: 0 24px;
+                    .loginSection {
+                        position: relative;
+                        .btnLogin {
+                            display: flex;
+                            align-items: center;
+                            gap: 0 8px;
+                            font-family: Inter-Bold, sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 21px;
+                            // color: $color-dark-10;
+                            .ic-login {
+                                content: url("../img/ic-user-login.png");
+                                width: 24px;
+                                height: 24px;
+                            }
+
+                            &.hide {
+                                display: none;
+                            }
+                        }
+                    }
+                    #networkBtn {
+                        display: flex;
+                        align-items: center;
+                        .ic-news-network {
+                            content: url("../img/network.png");
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .networkLabel {
+                            font-family: Inter, sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            font-style: normal;
+                            line-height: 21px;
+                            // color: $color-dark-50;
+                        }
+                    }
+                    #burgerBtn {
+                        cursor: pointer;
+                        .ic-burger-btn {
+                            content: url("../img/euro2024/ic-burger-menu.png");
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .heroBanner {
+        position: static;
+        .container {
+            background-color: red;
+            height: 100px;
+        }
+    }
+}

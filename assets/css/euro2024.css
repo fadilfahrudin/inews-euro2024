@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #a9a9a9 #0c0b0b;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-color: #a9a9a9 #0c0b0b;
+  min-height: 200vh;
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url("../fonts/Inter-Regular.eot");
+  src: url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url("../fonts/Inter-Bold.eot");
+  src: url("../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+#euro2024 {
+  background: linear-gradient(0deg, #143cdb 96.42%, #0d1e62 100.88%);
+}
+
+.container {
+  width: 1136px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1136px) {
+  .container {
+    width: 90%;
+  }
+}
+
+#openModalSSO {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+#openModalSSO img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+#openModalSSO.hide {
+  display: none;
+}
+
+.modalLogin {
+  position: absolute;
+  right: -4.3vw;
+  top: 37px;
+  width: 384px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  background-color: #feffff;
+  box-shadow: 0px 25px 60px -10px rgba(28, 39, 49, 0.12);
+  border-radius: 20px;
+  animation: showAnimasi 0.5s ease-in-out forwards;
+  overflow: hidden;
+}
+.modalLogin .modalHeader {
+  position: relative;
+  display: flex;
+}
+.modalLogin .modalHeader a {
+  display: flex;
+  height: auto;
+  gap: 0 16px;
+  padding: 8px 0;
+}
+.modalLogin .modalHeader a img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.modalLogin .modalHeader a .userInfo .detail-username {
+  width: 244px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #1a2128;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+.modalLogin .modalHeader a .userInfo .detail-name {
+  width: 244px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #de2027;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+}
+.modalLogin .modalHeader #closeModalSSO {
+  cursor: pointer;
+}
+.modalLogin .modalHeader #closeModalSSO .ic-close-modal-sso {
+  content: url("../img/ic-close-modal-sso.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modalLogin .modalBody .warning {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+  margin-bottom: 8px;
+}
+.modalLogin .modalBody .infoModal {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+.modalLogin .modalBody .infoModal a {
+  color: #de2027;
+  display: inline-block;
+  font-weight: 700;
+}
+.modalLogin .modalAction {
+  width: max-content;
+  color: #de2027;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+}
+.modalLogin.hide {
+  display: none;
+  opacity: 0;
+}
+
+@keyframes hideAnimasi {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes showAnimasi {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    display: flex;
+  }
+}
+header {
+  position: sticky;
+  width: 100%;
+  height: auto;
+  overflow-y: visible;
+}
+header .topBar {
+  position: sticky;
+  top: -1px;
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+header .topBar .container {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .topBar .container > div {
+  display: flex;
+  align-items: center;
+}
+header .topBar .container > div:first-child {
+  gap: 0 16px;
+}
+header .topBar .container > div:first-child a .ic-inews-tv {
+  width: 32.382px;
+  height: 28.279px;
+  animation: tvAnimate 2.5s linear infinite;
+}
+@keyframes tvAnimate {
+  0% {
+    content: url("../img/ic-inews-tv.png");
+  }
+  100% {
+    content: url("../img/ic-inews-tv-active.png");
+  }
+}
+header .topBar .container > div:first-child .app-gateway {
+  position: relative;
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .topBar .container > div:first-child .app-gateway img {
+  width: 112px;
+  height: auto;
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 43px;
+  left: -88px;
+  width: 370px;
+  height: 182px;
+  background-image: url("../img/pattren-bg.png");
+  background-size: 106%;
+  background-position: center center;
+  transform: translateY(0);
+  opacity: 0;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 1px 4px 0px rgba(143, 143, 143, 0.25);
+  align-items: center;
+  gap: 32px;
+  padding: 24px;
+  overflow: hidden;
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway.modal-app-gateway-open {
+  display: flex;
+  animation: open 0.5s linear forwards;
+}
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway.modal-app-gateway-close {
+  display: flex;
+  animation: close 0.3s linear reverse forwards;
+}
+@keyframes close {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway .qrcode-app img {
+  width: 120px;
+  height: 120px;
+  aspect-ratio: 1/1;
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway .get-app-wrappp {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway .get-app-wrappp p {
+  cursor: default;
+  text-align: center;
+  color: #000;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway .get-app-wrappp .app-available {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+header .topBar .container > div:first-child .app-gateway .modal-app-gateway .get-app-wrappp .app-available img {
+  width: 105px;
+  height: auto;
+}
+header .topBar .container > div:nth-child(2) .searchForm {
+  position: relative;
+  width: clamp(150px, 23vw, 310px);
+  height: 32px;
+}
+header .topBar .container > div:nth-child(2) .searchForm input {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 4px 16px;
+}
+header .topBar .container > div:nth-child(2) .searchForm .btnSearch {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .topBar .container > div:last-child {
+  gap: 0 24px;
+}
+header .topBar .container > div:last-child .loginSection {
+  position: relative;
+}
+header .topBar .container > div:last-child .loginSection .btnLogin {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  font-family: Inter-Bold, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+header .topBar .container > div:last-child .loginSection .btnLogin .ic-login {
+  content: url("../img/ic-user-login.png");
+  width: 24px;
+  height: 24px;
+}
+header .topBar .container > div:last-child .loginSection .btnLogin.hide {
+  display: none;
+}
+header .topBar .container > div:last-child #networkBtn {
+  display: flex;
+  align-items: center;
+}
+header .topBar .container > div:last-child #networkBtn .ic-news-network {
+  content: url("../img/network.png");
+  width: 20px;
+  height: 20px;
+}
+header .topBar .container > div:last-child #networkBtn .networkLabel {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 21px;
+}
+header .topBar .container > div:last-child #burgerBtn {
+  cursor: pointer;
+}
+header .topBar .container > div:last-child #burgerBtn .ic-burger-btn {
+  content: url("../img/euro2024/ic-burger-menu.png");
+  width: 32px;
+  height: 32px;
+}
+header .heroBanner {
+  position: static;
+}
+header .heroBanner .container {
+  background-color: red;
+  height: 100px;
+}/*# sourceMappingURL=euro2024.css.map */

@@ -612,6 +612,10 @@
                 overflow: hidden;
                 border-radius: var(--Radius-None, 0px) var(--Radius-None, 0px) 8px 8px;
                 background: var(--Grey3, #d8d8d8);
+
+                &.placment2__euro2024 {
+                    height: 600px;
+                }
             }
         }
     }
